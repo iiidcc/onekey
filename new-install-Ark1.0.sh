@@ -345,7 +345,7 @@ echo -e "${green}安装完毕,面板访问地址：http://${baseip}:${portinfo}$
 update_Ark(){
 mv /root/Ark /root/Arkdb
 git clone https://ghproxy.com/https://github.com/NNNNolan/Ark.git /root/Ark
-cd /root/Ark &&  mkdir -p  Config &&  mv /root/Arkdb/Config.json /root/Ark/Config/Config.json
+cd /root/Ark &&  mkdir -p  Config &&  mv /root/Arkdb/Config/Config.json /root/Ark/Config/Config.json
 cd /root/Ark &&    mv /root/Arkdb/.local-chromium /root/Ark/.local-chromium
 cd /root/Ark
 portinfo=$(docker port Ark | head -1  | sed 's/ //g' | sed 's/80\/tcp->0.0.0.0://g')
