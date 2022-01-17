@@ -143,10 +143,10 @@ check_container_name() {
 
 # 容器名称
 input_container_name() {
-    echo -n -e "\e[33m\n三、请输入要创建的 Docker 容器名称[默认为：city]->\e[0m"
+    echo -n -e "\e[33m\n三、请输入要创建的 Docker 容器名称[默认为：qinglong]->\e[0m"
     read container_name
     if [ -z "$container_name" ]; then
-        CONTAINER_NAME="city"
+        CONTAINER_NAME="qinglong"
     else
         CONTAINER_NAME=$container_name
     fi
@@ -198,7 +198,7 @@ fi
 
 # 端口问题
 modify_ql_port() {
-    inp "是否修改青龙端口[默认 5678]：\n1) 修改\n2) 不修改[默认]"
+    inp "是否修改青龙端口[默认 5700]：\n1) 修改\n2) 不修改[默认]"
     opt
     read change_ql_port
     if [ "$change_ql_port" = "1" ]; then
@@ -207,7 +207,7 @@ modify_ql_port() {
     fi
 }
 modify_Ninja_port() {
-    inp "是否修改 Ninja 端口[默认 5789]：\n1) 修改\n2) 不修改[默认]"
+    inp "是否修改 Ninja 端口[默认 5701]：\n1) 修改\n2) 不修改[默认]"
     opt
     read change_Ninja_port
     if [ "$change_Ninja_port" = "1" ]; then
