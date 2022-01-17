@@ -48,7 +48,7 @@ check_url() {
 
 # 获取有效 config.sh 链接
 get_valid_config() {
-    config_list=(http://jx.lim1.cn/config.sample.sh)
+    config_list=(https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/config.sample.sh https://ghproxy.com/https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/config.sample.sh)
     for url in ${config_list[@]}; do
         check_url $url
         if [ $? = 0 ]; then
@@ -82,7 +82,7 @@ fi
 
 # 获取有效 jdCookie.js 链接
 get_valid_jdCookie() {
-    jdCookie_list=(http://jx.lim1.cn/jdCookie.js)
+    jdCookie_list=(https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/jdCookie.js https://ghproxy.com/https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/jdCookie.js)
     for url in ${jdCookie_list[@]}; do
         check_url $url
         if [ $? = 0 ]; then
@@ -115,7 +115,7 @@ fi
 
 # 获取有效 extra.sh 链接
 get_valid_extra() {
-    extra_list=(http://jx.lim1.cn/extra.sh)
+    extra_list=(https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/extra.sh https://ghproxy.com/https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/extra.sh)
     for url in ${extra_list[@]}; do
         check_url $url
         if [ $? = 0 ]; then
@@ -192,7 +192,7 @@ fi
 
 # 获取有效 code.sh 链接
 get_valid_code() {
-    code_list=(http://jx.lim1.cn/code.sh)
+    code_list=(https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/code.sh https://ghproxy.com/https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/code.sh)
     for url in ${code_list[@]}; do
         check_url $url
         if [ $? = 0 ]; then
@@ -258,7 +258,7 @@ fi
 
 # 获取有效 task_before.sh 链接
 get_valid_task_before() {
-    task_before_list=(http://jx.lim1.cn/task_before.sh)
+    task_before_list=(https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/task_before.sh https://ghproxy.com/https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/task_before.sh)
     for url in ${task_before_list[@]}; do
         check_url $url
         if [ $? = 0 ]; then

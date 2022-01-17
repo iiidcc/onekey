@@ -79,7 +79,7 @@ docker_install() {
     fi
 }
 #docker安装文件
-#bash <(curl -sSL http://jx.lim1.cn/DockerInstallation.sh)
+#bash <(curl -sSL https://ghproxy.com/https://raw.githubusercontent.com/Bulletgod/onekey/main/DockerInstallation.sh)
 docker_install
 warn "CITY仓库一键安装配置，小白回车到底，一路默认选择"
 # 配置文件保存目录
@@ -378,7 +378,7 @@ if [ "$access" != "2" ]; then
             docker exec -it $CONTAINER_NAME bash -c "sed -i \"s/ALLOW_NUM=40/ALLOW_NUM=100/\" /ql/ninja/backend/.env && cd /ql/ninja/backend && pm2 start"
         fi
         log "8.开始青龙内部配置"
-        docker exec -it $CONTAINER_NAME bash -c "$(curl -fsSL https://ghproxy.com/https://github.com/shufflewzc/VIP/blob/main/Scripts/sh/1customCDN.sh)"
+        docker exec -it $CONTAINER_NAME bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/1customCDN.sh)"
     else
         warn "8.未检测到 token，取消内部配置"
     fi
@@ -391,7 +391,7 @@ read -p "安装脚本依赖（跳过为 0，安装为 1，回车等同 1）请�
     Dependency=${Dependency:-'1'}
 if [ "${Dependency}" = '1' ]; then
 log "9.开始安装脚本依赖"
-docker exec -it $CONTAINER_NAME bash -c "$(curl -fsSL  http://jx.lim1.cn/QLOneKeyDependency.sh)"
+docker exec -it $CONTAINER_NAME bash -c "$(curl -fsSL  https://ghproxy.com/https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/QLOneKeyDependency.sh)"
 log "正在重启容器 $CONTAINER_NAME "
 docker restart $CONTAINER_NAME 
 log " $CONTAINER_NAME 重启成功"
