@@ -155,7 +155,9 @@ exit
 
 install_nvjdc(){
 echo -e "${red}开始进行安装,请根据命令提示操作${plain}"
+
 git clone https://ghproxy.com/https://github.com/Bulletgod/nvjdcdocker.git /root/nolanjdc
+
 if [ ! -d "/root/nolanjdc/.local-chromium/Linux-884014" ]; then
 cd nolanjdc
 echo -e "${green}正在拉取chromium-browser-snapshots等依赖,体积100多M，请耐心等待下一步命令提示···${plain}"
