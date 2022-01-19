@@ -7,7 +7,7 @@ bash <(curl -L -s https://ghproxy.com/https://raw.githubusercontent.com/Bulletgo
 ```shell
 bash <(curl -L -s https://raw.githubusercontent.com/Bulletgod/onekey/main/qinglong/ql.sh)
 ```
-一键nvjdc.1.9
+一键nvjdc
 ```shell
 bash <(curl -L -s https://ghproxy.com/https://raw.githubusercontent.com/Bulletgod/onekey/main/new-install-nvjdc.sh)
 ```
