@@ -161,7 +161,7 @@ echo -e "${red}开始进行安装,请根据命令提示操作${plain}"
 apt install git -y || yum install git -y > /dev/null 
 git clone https://ghproxy.com/https:///github.com/Bulletgod/nvjdcdocker.git /root/nolanjdc
 if [ ! -d "/root/nolanjdc/.local-chromium/Linux-884014" ]; then
-cd nolanjdc
+cd /root/nolanjdc
 echo -e "${green}正在拉取chromium-browser-snapshots等依赖,体积100多M，请耐心等待下一步命令提示···${plain}"
 mkdir -p  .local-chromium/Linux-884014 && cd .local-chromium/Linux-884014
 wget https://mirrors.huaweicloud.com/chromium-browser-snapshots/Linux_x64/884014/chrome-linux.zip > /dev/null 2>&1 
@@ -345,7 +345,7 @@ echo -e "${green}安装完毕,面板访问地址：http://${baseip}:${portinfo}$
 update_nvjdc(){
 mv /root/nvjdc /root/nvjdcdb
 git clone https://ghproxy.com/https://github.com/bulletgod/nvjdcdocker.git /root/nolanjdc
-cd /root/nolanjdc &&  mkdir -p  Config &&  mv /root/nvjdcdb/Config.json /root/nolanjdc/Config/Config.json
+cd /root/nolanjdc &&  mkdir -p  Config &&  mv /root/nvjdcdb/Config/Config.json /root/nolanjdc/Config/Config.json
 cd /root/nolanjdc &&    mv /root/nvjdcdb/.local-chromium /root/nolanjdc/.local-chromium
 cd /root/nolanjdc
 portinfo=$(docker port nvjdc | head -1  | sed 's/ //g' | sed 's/80\/tcp->0.0.0.0://g')
