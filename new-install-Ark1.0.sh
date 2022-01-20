@@ -159,7 +159,7 @@ exit
 install_Ark(){
 echo -e "${red}开始进行安装,请根据命令提示操作${plain}"
 apt install git -y || yum install git -y > /dev/null
-git clone git clone https://ghproxy.com/https://github.com/NNNNolan/Ark.git /root/Ark
+git clone https://ghproxy.com/https://github.com/NNNNolan/Ark.git /root/Ark
 if [ ! -d "/root/Ark/.local-chromium/Linux-884014" ]; then
 cd Ark
 echo -e "${green}正在拉取chromium-browser-snapshots等依赖,体积100多M，请耐心等待下一步命令提示···${plain}"
