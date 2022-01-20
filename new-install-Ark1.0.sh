@@ -381,8 +381,8 @@ exit 0
 }
 
 uninstall_Ark(){
-docker stop Ark
-docker rm Ark
+docker stop ark
+docker rm ark
 docker rmi nolanhzy/ark:${version1}
 rm -rf /root/Ark
 echo -e "${green}Ark面板已卸载，脚本自动退出，请手动删除Ark的镜像。${plain}"
