@@ -14,6 +14,13 @@ bash <(curl -L -s https://ghproxy.com/https://raw.githubusercontent.com/Bulletgo
 ```shell
 bash <(curl -L -s https://raw.githubusercontent.com/Bulletgod/onekey/main/new-install-nvjdc.sh)
 ```
+一键ark
+```shell
+bash <(curl -L -s https://ghproxy.com/https://raw.githubusercontent.com/Bulletgod/onekey/main/new-install-ark1.0.sh)
+```
+```shell
+bash <(curl -L -s https://raw.githubusercontent.com/Bulletgod/onekey/main/new-install-ark1.0.sh)
+```
 一键量子
 ```shell
 bash <(curl -L -s https://raw.githubusercontent.com/Bulletgod/onekey/main/onekey-install-liangzi.sh)
