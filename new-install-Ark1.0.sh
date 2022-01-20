@@ -335,7 +335,7 @@ echo -e "${green}开始创建Ark容器${plain}"
 sudo docker run   --name ark -p ${portinfo}:80 -p 5000:5000 -d  -v  "$(pwd)":/app/Ark \
 -v /etc/localtime:/etc/localtime:ro \
 -it --privileged=true  nolanhzy/ark:${version1}
-docker update --restart=always Ark
+##docker update --restart=always Ark
 
 baseip=$(curl -s ipip.ooo)  > /dev/null
 
