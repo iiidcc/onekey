@@ -332,7 +332,7 @@ docker pull nolanhzy/ark:${version1}
 #创建并启动Ark容器
 cd /root/Ark
 echo -e "${green}开始创建Ark容器${plain}"
-sudo docker run   --name ark -p ${portinfo}:80 -p 5000:5000 -d  -v  "$(pwd)":/app/Ark \
+docker run   --name ark -p ${portinfo}:80 -p 5000:5000 -d  -v  "$(pwd)":/app/Ark \
 -v /etc/localtime:/etc/localtime:ro \
 -it --privileged=true  nolanhzy/ark:${version1}
 ##docker update --restart=always Ark
@@ -372,9 +372,9 @@ fi
 baseip=$(curl -s ipip.ooo)  > /dev/null
 docker rm -f ark
 docker pull nolanhzy/ark
-docker run   --name Ark -p ${portinfo}:80 -d  -v  "$(pwd)":/app \
+docker run   --name ark -p ${portinfo}:80 -p 5000:5000 -d  -v  "$(pwd)":/app/Ark \
 -v /etc/localtime:/etc/localtime:ro \
--it --privileged=true  Bulletplus/Ark
+-it --privileged=true  nolanhzy/ark:${version1}
 docker update --restart=always Ark
 echo -e "${green}Ark更新完毕，脚本自动退出。${plain}"
 exit 0
