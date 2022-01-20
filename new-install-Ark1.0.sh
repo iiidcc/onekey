@@ -392,8 +392,8 @@ exit 0
 menu() {
   echo -e "\
 ${green}0.${plain} 退出脚本
-${green}1.${plain} 安装Ark2.4
-${green}2.${plain} 升级Ark2.4
+${green}1.${plain} 安装Ark1.0
+${green}2.${plain} 升级Ark1.0
 ${green}3.${plain} 卸载Ark
 "
 get_system_info
